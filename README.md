@@ -14,7 +14,7 @@ At the first launch after building the containers, wait a few seconds for MySQL 
 
 To install proper vendor libraries, you need to run  composer in php container: `docker-compose exec php composer install -d ./public`
 
-To initiate te project DB you need to run the Yii2 command `migrate` to create the tables: `docker-compose exec php php ./public/yii migrate`                     
+To initiate te project DB you need to run the Yii2 command `migrate` to create the tables: `docker-compose exec php php ./public/yii migrate --interactive=0`                     
 
 The project is now available if you go to the URL `localhost`  
 
